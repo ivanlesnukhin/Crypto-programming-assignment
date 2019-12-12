@@ -5,6 +5,27 @@ package com.company;// Compilation (CryptoLibTest contains the main-method):
 
 public class CryptoLib {
 
+
+	//TASK 1 .....................................................................................
+
+	/**
+	 * GCD implementation
+	 */
+	public static int gcd(int a, int b){
+		if (a < b){
+			return gcd (b, a);
+		}
+		int c = a%b;
+		if(c == 0){
+			return b;
+		}
+		a = b;
+		b = c;
+		return gcd (a, b);
+	}
+
+
+
 	/**
 	 * Returns an array "result" with the values "result[0] = gcd",
 	 * "result[1] = s" and "result[2] = t" such that "gcd" is the greatest
@@ -27,7 +48,13 @@ public class CryptoLib {
 	 * Returns Euler's Totient for value "n".
 	 **/
 	public static int EulerPhi(int n) {
-		return -1;
+		int count = 0;
+		for (int i = 1; i<n; i++){
+			if (gcd(n, i) == 1){
+				count++;
+			}
+		}
+		return count;
 	}
 
 	/**
@@ -35,7 +62,15 @@ public class CryptoLib {
 	 * modular inverse does not exist.
 	 **/
 	public static int ModInv(int n, int m) {
-		return -1;
+		int tmp;
+		for (int i = 0; i < m; i++){
+			tmp = n*i;
+			if (tmp % m == 1){
+				return i;
+			}
+		}
+
+		return 0;
 	}
 
 	/**
