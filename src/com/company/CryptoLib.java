@@ -3,6 +3,8 @@ package com.company;// Compilation (CryptoLibTest contains the main-method):
 // Running:
 //   java CryptoLibTest
 
+
+
 public class CryptoLib {
 
 
@@ -45,6 +47,7 @@ public class CryptoLib {
 	}
 
 	/**
+	 * DONE!!!
 	 * Returns Euler's Totient for value "n".
 	 **/
 	public static int EulerPhi(int n) {
@@ -58,6 +61,7 @@ public class CryptoLib {
 	}
 
 	/**
+	 * DONE!!!
 	 * Returns the value "v" such that "n*v = 1 (mod m)". Returns 0 if the
 	 * modular inverse does not exist.
 	 **/
@@ -74,11 +78,24 @@ public class CryptoLib {
 	}
 
 	/**
+	 * DONE!!!
 	 * Returns 0 if "n" is a Fermat Prime, otherwise it returns the lowest
 	 * Fermat Witness. Tests values from 2 (inclusive) to "n/3" (exclusive).
 	 **/
 	public static int FermatPT(int n) {
-		return -1;
+		if (n<6){
+			System.out.println("The input to FermatPT() must be > 5");
+			return -1;
+		}
+		double i;
+		for (int a = 2; a <= (n/3); a++){
+			i = Math.pow(a, (n-1));
+			if (!(i%n == 1)){
+				return a;
+			}
+		 }
+
+		return 0;
 	}
 
 	/**
