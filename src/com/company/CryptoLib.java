@@ -99,13 +99,26 @@ public class CryptoLib {
 	}
 
 	/**
+	 * DONE!!!
 	 * Returns the probability that calling a perfect hash function with
 	 * "n_samples" (uniformly distributed) will give one collision (i.e. that
 	 * two samples result in the same hash) -- where "size" is the number of
 	 * different output values the hash function can produce.
 	 **/
+
+	//n_samples, size must be int!!!!!!!
 	public static double HashCP(double n_samples, double size) {
-		return -1;
+		if (n_samples < 2){
+			return 0;
+		}
+		if(n_samples > size){
+			return 1;
+		}
+		double noCollision = 1;
+		for (int i = 1; i < n_samples; i++){
+			noCollision = noCollision * (i/size);
+		}
+		return 1 - noCollision;
 	}
 
 }
