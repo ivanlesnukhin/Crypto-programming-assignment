@@ -4,14 +4,19 @@
     <list default="true" id="11d95e0f-ccb8-4083-889a-93205fdf75a4" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/Crypto programming assignment/com/company/CryptoLib.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Crypto programming assignment/com/company/CryptoLib.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Crypto programming assignment/com/company/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Crypto programming assignment/com/company/Main.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/company/CryptoLib.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/company/CryptoLib.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/com/company/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/company/Main.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -71,7 +76,7 @@
       <workItem from="1575877261177" duration="37000" />
       <workItem from="1576000892550" duration="880000" />
       <workItem from="1576137730928" duration="4936000" />
-      <workItem from="1576324456305" duration="6332000" />
+      <workItem from="1576324456305" duration="7415000" />
     </task>
     <servers />
   </component>
@@ -83,26 +88,30 @@
       <screen x="0" y="0" width="1920" height="1018" />
     </state>
     <state x="487" y="268" width="945" height="481" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1920.1018@0.0.1920.1018" timestamp="1575877290324" />
+    <state x="561" y="130" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1576343683355">
+      <screen x="0" y="0" width="1920" height="1018" />
+    </state>
+    <state x="561" y="130" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1920.1018@0.0.1920.1018" timestamp="1576343683355" />
     <state x="636" y="144" key="FileChooserDialogImpl" timestamp="1575535044769">
       <screen x="0" y="0" width="1920" height="1018" />
     </state>
     <state x="636" y="144" key="FileChooserDialogImpl/0.0.1920.1018@0.0.1920.1018" timestamp="1575535044769" />
-    <state width="1850" height="234" key="GridCell.Tab.0.bottom" timestamp="1576333652782">
+    <state width="1850" height="234" key="GridCell.Tab.0.bottom" timestamp="1576343757125">
       <screen x="0" y="0" width="1920" height="1018" />
     </state>
-    <state width="1850" height="234" key="GridCell.Tab.0.bottom/0.0.1920.1018@0.0.1920.1018" timestamp="1576333652782" />
-    <state width="1850" height="234" key="GridCell.Tab.0.center" timestamp="1576333652781">
+    <state width="1850" height="234" key="GridCell.Tab.0.bottom/0.0.1920.1018@0.0.1920.1018" timestamp="1576343757125" />
+    <state width="1850" height="234" key="GridCell.Tab.0.center" timestamp="1576343757124">
       <screen x="0" y="0" width="1920" height="1018" />
     </state>
-    <state width="1850" height="234" key="GridCell.Tab.0.center/0.0.1920.1018@0.0.1920.1018" timestamp="1576333652781" />
-    <state width="1850" height="234" key="GridCell.Tab.0.left" timestamp="1576333652780">
+    <state width="1850" height="234" key="GridCell.Tab.0.center/0.0.1920.1018@0.0.1920.1018" timestamp="1576343757124" />
+    <state width="1850" height="234" key="GridCell.Tab.0.left" timestamp="1576343757124">
       <screen x="0" y="0" width="1920" height="1018" />
     </state>
-    <state width="1850" height="234" key="GridCell.Tab.0.left/0.0.1920.1018@0.0.1920.1018" timestamp="1576333652780" />
-    <state width="1850" height="234" key="GridCell.Tab.0.right" timestamp="1576333652782">
+    <state width="1850" height="234" key="GridCell.Tab.0.left/0.0.1920.1018@0.0.1920.1018" timestamp="1576343757124" />
+    <state width="1850" height="234" key="GridCell.Tab.0.right" timestamp="1576343757125">
       <screen x="0" y="0" width="1920" height="1018" />
     </state>
-    <state width="1850" height="234" key="GridCell.Tab.0.right/0.0.1920.1018@0.0.1920.1018" timestamp="1576333652782" />
+    <state width="1850" height="234" key="GridCell.Tab.0.right/0.0.1920.1018@0.0.1920.1018" timestamp="1576343757125" />
     <state width="1850" height="292" key="GridCell.Tab.1.bottom" timestamp="1576146821037">
       <screen x="0" y="0" width="1920" height="1018" />
     </state>
@@ -123,5 +132,9 @@
       <screen x="0" y="0" width="1920" height="1018" />
     </state>
     <state x="473" y="248" key="com.intellij.ide.util.TipDialog/0.0.1920.1018@0.0.1920.1018" timestamp="1576324458339" />
+    <state x="21" y="0" key="new project wizard" timestamp="1576343754090">
+      <screen x="0" y="0" width="1920" height="1018" />
+    </state>
+    <state x="21" y="0" key="new project wizard/0.0.1920.1018@0.0.1920.1018" timestamp="1576343754090" />
   </component>
 </project>

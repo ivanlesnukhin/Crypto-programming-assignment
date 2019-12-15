@@ -3,6 +3,7 @@ package com.company;
 //import static com.company.CryptoLib.EulerPhi;
 //import static com.company.CryptoLib.gcd;
 import static com.company.CryptoLib.*;
+import static com.company.FiatShamir.*;
 
 public class Main {
 
@@ -10,6 +11,8 @@ public class Main {
 	    System.out.println("Hello world");
 
         System.out.println(HashCP(1, 2));
+
+
 
     }
 }
