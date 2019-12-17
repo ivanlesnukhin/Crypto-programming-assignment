@@ -18,34 +18,6 @@ public class FiatShamir {
         }
     }
 
-    public static void main(String[] args) {
-        String filename = "input.txt";
-        BigInteger N = BigInteger.ZERO;
-        BigInteger X = BigInteger.ZERO;
-        ProtocolRun[] runs = new ProtocolRun[10];
-        try {
-            BufferedReader br = new BufferedReader(new FileReader(filename));
-            N = new BigInteger(br.readLine().split("=")[1]);
-            X = new BigInteger(br.readLine().split("=")[1]);
-            for (int i = 0; i < 10; i++) {
-                String line = br.readLine();
-                String[] elem = line.split(",");
-                runs[i] = new ProtocolRun(
-                        new BigInteger(elem[0].split("=")[1]),
-                        Integer.parseInt(elem[1].split("=")[1]),
-                        new BigInteger(elem[2].split("=")[1]));
-            }
-            br.close();
-        } catch (Exception err) {
-            System.err.println("Error handling file.");
-            err.printStackTrace();
-            System.exit(1);
-        }
-        BigInteger m = recoverSecret(N, X, runs);
-        System.out.println("Recovered message: " + m);
-        System.out.println("Decoded text: " + decodeMessage(m));
-    }
-
     public static String decodeMessage(BigInteger m) {
         return new String(m.toByteArray());
     }
@@ -61,17 +33,24 @@ public class FiatShamir {
      *            Ten runs of the protocol.
      * @return
      */
-    private static BigInteger recoverSecret(BigInteger N, BigInteger X,
+    public static BigInteger recoverSecret(BigInteger N, BigInteger X,
                                             ProtocolRun[] runs) {
-        BigInteger secret;
+        BigInteger secret = BigInteger.ZERO;
+        //We loop through the array and try to find same R:s
         for (int i = 0; i < runs.length-1; i++){
             for (int j = i+1; j < runs.length; j++){
-             if (runs[i].R == runs[j].R){
-
+            //R must be same, meanwhile c must be different in order to be able to find the secret
+             if ((runs[i].R == runs[j].R) && (runs[i].c != runs[j].c)){
+                 BigInteger s1 = runs[j].s;
+                 BigInteger s2 = runs[i].s;
+                 if (runs[i].c == 0){
+                     secret = s1.divide(s2);
+                 }else{
+                     secret = s2.divide(s1);
+                 }
              }
             }
         }
-        // TODO. Recover the secret value x such that x^2 = X (mod N).
-        return BigInteger.ZERO;
+        return secret;
     }
 }
