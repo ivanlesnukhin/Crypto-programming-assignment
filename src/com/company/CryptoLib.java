@@ -36,14 +36,18 @@ public class CryptoLib {
 	public static int[] EEA(int a, int b) {
 		// Note: as you can see in the test suite,
 		// your function should work for any (positive) value of a and b.
-		int gcd = -1;
-		int s = -1;
-		int t = -1;
+
+
 		int[] result = new int[3];
-		result[0] = gcd;
-		result[1] = s;
-		result[2] = t;
-		return result;
+
+		if (b == 0){
+			return new int[]{a, 1, 0};
+		}
+		result = EEA(b, a%b);
+		int g = result[0];
+		int s = result[2];
+		int t = result[1] - (a/b)*result[2];
+		return new int [] {g, s, t};
 	}
 
 	/**
