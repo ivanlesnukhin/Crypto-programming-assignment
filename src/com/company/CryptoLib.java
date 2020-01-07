@@ -33,6 +33,13 @@ public class CryptoLib {
 
 		int[] result = new int[3];
 
+		if (a == b){
+			result[0] = a;
+			result[1] = 1;
+			result[2] = 0;
+			return result;
+		}
+
 		if (b == 0){
 			return new int[]{a, 1, 0};
 		}

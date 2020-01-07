@@ -2,10 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="11d95e0f-ccb8-4083-889a-93205fdf75a4" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/com/company/CryptoLib.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/company/CryptoLib.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/company/Main.java" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -119,22 +117,22 @@
       <screen x="0" y="0" width="1920" height="1018" />
     </state>
     <state x="636" y="144" key="FileChooserDialogImpl/0.0.1920.1018@0.0.1920.1018" timestamp="1578407613421" />
-    <state width="1850" height="234" key="GridCell.Tab.0.bottom" timestamp="1578411936449">
+    <state width="1850" height="234" key="GridCell.Tab.0.bottom" timestamp="1578412984376">
       <screen x="0" y="0" width="1920" height="1018" />
     </state>
-    <state width="1850" height="234" key="GridCell.Tab.0.bottom/0.0.1920.1018@0.0.1920.1018" timestamp="1578411936449" />
-    <state width="1850" height="234" key="GridCell.Tab.0.center" timestamp="1578411936448">
+    <state width="1850" height="234" key="GridCell.Tab.0.bottom/0.0.1920.1018@0.0.1920.1018" timestamp="1578412984376" />
+    <state width="1850" height="234" key="GridCell.Tab.0.center" timestamp="1578412984372">
       <screen x="0" y="0" width="1920" height="1018" />
     </state>
-    <state width="1850" height="234" key="GridCell.Tab.0.center/0.0.1920.1018@0.0.1920.1018" timestamp="1578411936448" />
-    <state width="1850" height="234" key="GridCell.Tab.0.left" timestamp="1578411936447">
+    <state width="1850" height="234" key="GridCell.Tab.0.center/0.0.1920.1018@0.0.1920.1018" timestamp="1578412984372" />
+    <state width="1850" height="234" key="GridCell.Tab.0.left" timestamp="1578412984372">
       <screen x="0" y="0" width="1920" height="1018" />
     </state>
-    <state width="1850" height="234" key="GridCell.Tab.0.left/0.0.1920.1018@0.0.1920.1018" timestamp="1578411936447" />
-    <state width="1850" height="234" key="GridCell.Tab.0.right" timestamp="1578411936448">
+    <state width="1850" height="234" key="GridCell.Tab.0.left/0.0.1920.1018@0.0.1920.1018" timestamp="1578412984372" />
+    <state width="1850" height="234" key="GridCell.Tab.0.right" timestamp="1578412984376">
       <screen x="0" y="0" width="1920" height="1018" />
     </state>
-    <state width="1850" height="234" key="GridCell.Tab.0.right/0.0.1920.1018@0.0.1920.1018" timestamp="1578411936448" />
+    <state width="1850" height="234" key="GridCell.Tab.0.right/0.0.1920.1018@0.0.1920.1018" timestamp="1578412984376" />
     <state width="1850" height="292" key="GridCell.Tab.1.bottom" timestamp="1578411794592">
       <screen x="0" y="0" width="1920" height="1018" />
     </state>
@@ -159,16 +157,5 @@
       <screen x="0" y="0" width="1920" height="1018" />
     </state>
     <state x="21" y="0" key="new project wizard/0.0.1920.1018@0.0.1920.1018" timestamp="1576343754090" />
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/com/company/CryptoLibTest.java</url>
-          <line>66</line>
-          <option name="timeStamp" value="2" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
   </component>
 </project>
