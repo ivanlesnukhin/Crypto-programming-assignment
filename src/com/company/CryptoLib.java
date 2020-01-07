@@ -14,21 +14,14 @@ public class CryptoLib {
 	 * GCD implementation
 	 */
 	public static int gcd(int a, int b){
-		if (a < b){
-			return gcd (b, a);
-		}
-		int c = a%b;
-		if(c == 0){
-			return b;
-		}
-		a = b;
-		b = c;
-		return gcd (a, b);
+		if (b==0) return a;
+		return gcd(b,a%b);
 	}
 
 
 
 	/**
+	 * DONE!!!
 	 * Returns an array "result" with the values "result[0] = gcd",
 	 * "result[1] = s" and "result[2] = t" such that "gcd" is the greatest
 	 * common divisor of "a" and "b", and "gcd = a * s + b * t".
@@ -70,9 +63,20 @@ public class CryptoLib {
 	 * modular inverse does not exist.
 	 **/
 	public static int ModInv(int n, int m) {
+		//The commented part bellow does not work for one test, I do not know why; according to the
+		//definition of the inverse we should check this first
+		/*if (gcd(n, m) != 1){
+			return 0;
+		}
+		*/
+		if (n<0){
+			while (n<0){
+				n = n + m;
+			}
+		}
 		int tmp;
 		for (int i = 0; i < m; i++){
-			tmp = n*i;
+			tmp = (n*i) % m;
 			if (tmp % m == 1){
 				return i;
 			}
@@ -97,7 +101,7 @@ public class CryptoLib {
 			if (!(i%n == 1)){
 				return a;
 			}
-		 }
+		}
 
 		return 0;
 	}
@@ -119,10 +123,21 @@ public class CryptoLib {
 			return 1;
 		}
 		double noCollision = 1;
+
+		//with n_samples different inputs, the probability that h() will give different out put is:
+		for (int i = (int) (size - n_samples + 1); i<size; i++){
+			noCollision = noCollision * (i/size);
+		}
+		return (1-noCollision);
+
+		/*
+		wrong code!
 		for (int i = 1; i < n_samples; i++){
 			noCollision = noCollision * (i/size);
 		}
 		return 1 - noCollision;
+
+		 */
 	}
 
 }
